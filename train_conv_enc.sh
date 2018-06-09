@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python training/training_conv_encoder.py ../../../Data/sorted_sums_matched_struc_train.csv ../../../Data/vocab.csv conv_encoder 7 --gpu --embed-dropout-bool True --embed-dropout-p 0.369 --bce-weights 0.15,1 --batch-size 16 --kernel-sizes 2,6 --num-filter-maps 236 --fc-dropout-p 0.551 --embed-file ../../../Data/processed_full.embed
